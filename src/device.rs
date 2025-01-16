@@ -119,4 +119,7 @@ trait Device {
 
     #[dbus_proxy(property)]
     fn voltage(&self) -> zbus::Result<f64>;
+    
+    #[dbus_proxy(property)]
+    fn time_to_empty(&self) -> zbus::Result<i64>;
 }
