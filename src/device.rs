@@ -122,4 +122,7 @@ trait Device {
     
     #[dbus_proxy(property)]
     fn time_to_empty(&self) -> zbus::Result<i64>;
+
+    #[dbus_proxy(property)]
+    fn time_to_full(&self) -> zbus::Result<i64>;
 }
